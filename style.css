@@ -10,15 +10,16 @@ nav{
    
 }
 .main-div{
-    /* display: flex; */
-    /* align-items: center; */
+    display: flex;
+    align-items: center;
     justify-content: space-between;
     background-color: rgb(170, 202, 213);
+    height: 10vh;
     /* position: fixed; */
     
 }
 .container{
-    max-width: 1380px;
+    max-width: 1980px;
     margin-inline: auto;
     overflow: hidden;
     
@@ -33,10 +34,11 @@ ul{
    
 }
 ul li{
-    padding: 8px;
+    padding: 38px;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bolder;
     cursor: pointer;
+    font-size: 30px;
 }
 ul li:hover{
     color:aquamarine;
@@ -44,14 +46,19 @@ ul li:hover{
 }
 a img{
     border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    margin-left: 30px;
+    width: 80px;
+    height: 80px;
+    margin-left: 50px;
+    
 }
 
 .search-bar{
-    margin-right: 30px;
+    margin-right: 90px;
     cursor: pointer;
+    
+}
+#search-text{
+    padding: 10px;
 }
 .news-input{
     background-color: lightcyan;
@@ -61,6 +68,8 @@ a img{
     background-color: blue;
     color: white;
     margin: 10px;
+    height: 5vh;
+    width: 10vh;
     
 }
 /* =============================================== */
@@ -105,3 +114,16 @@ main{
     margin-block: 12px;
 
 }
+
+@media (max-width: 450px) {
+    /* Styles for small screen devices */
+  
+   
+    .main-div {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+  
+    /* Adjust other styles as needed for small screens */
+  }
+  
